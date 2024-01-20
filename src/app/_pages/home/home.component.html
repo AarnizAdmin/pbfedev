@@ -1,0 +1,43 @@
+<mat-toolbar color="accent" class="header">
+    <button mat-icon-button (click)="drawer.toggle()" class="example-icon"
+      aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+  </button>
+  
+    <span>Proud Bihari</span>
+    <span class="example-spacer"></span>
+    <button (click)="authService.GoogleAuth()" mat-raised-button class="example-icon" aria-label="Example icon-button with share icon">
+      Login/signup
+    </button>
+  </mat-toolbar>
+ 
+
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
+      <div style="padding-top: 60px; "></div>
+        <mat-card class="example-card" style="width: 280px;">
+        <mat-card-header class="header1">
+          <div mat-card-avatar class="header1"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+      <mat-divider></mat-divider>
+      <mat-nav-list class="side-nav">
+       <!--<a  mat-list-item class="mat-list" [routerLink]="['dashboard']" [routerLinkActive]="['is-active']"> <i class="material-icons">view_week</i><span class="nav-list-header">Overview</span></a>--> 
+        <a mat-list-item class="mat-list" [routerLink]="['feeds']" [routerLinkActive]="['is-active']"> <i class="material-icons">groups</i><span class="nav-list-header">Feeds hello</span></a>
+        <a mat-list-item class="mat-list" [routerLink]="['edclub']" [routerLinkActive]="['is-active']"> <i class="material-icons">groups</i><span class="nav-list-header">Education club</span></a>     
+      </mat-nav-list>
+      <mat-divider></mat-divider>
+      <!--
+      <mat-nav-list class="side-nav">
+        <a  mat-list-item class="mat-list" [routerLink]="['t']" [routerLinkActive]="['is-active']"> <i class="material-icons">home</i><span class="nav-list-header">Overview</span></a>
+        <a mat-list-item class="mat-list" [routerLink]="['t1']" [routerLinkActive]="['is-active']"> <i class="material-icons">corporate_fare</i><span class="nav-list-header">Users</span></a>
+        <a mat-list-item class="mat-list" [routerLink]="['t2']" [routerLinkActive]="['is-active']"> <i class="material-icons">corporate_fare</i><span class="nav-list-header">Clubs</span></a>     
+      </mat-nav-list> -->
+    </mat-drawer>
+    <div style="padding-top: 60px;"></div>  
+ 
+    <router-outlet></router-outlet>
+  </mat-drawer-container>
+ 

@@ -1,6 +1,6 @@
 import { Injectable, NgZone } from '@angular/core';
 
-import { FacebookAuthProvider, GoogleAuthProvider } from '@angular/fire/auth';
+import { GoogleAuthProvider } from '@angular/fire/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
