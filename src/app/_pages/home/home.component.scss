@@ -46,6 +46,7 @@
 .nav-list-header {
   font-size: 16px;
   font-weight: 800;
+  font-family: Arya;
 }
 
 .mat-list{
@@ -67,8 +68,15 @@
 }
 
 
+
+.example-header-image {
+  border-radius: 5px;
+  border: 2px solid yellowgreen;
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
 .header1{
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+   
 }
 
 .body-container{

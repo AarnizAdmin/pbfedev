@@ -2,3 +2,8 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: Arya;
+    src: url(assets/fonts/Arya-Regular.ttf) format("opentype");
+  }
